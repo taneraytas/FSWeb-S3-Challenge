@@ -368,7 +368,11 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
+    footer .menu nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .icon {
         display: flex;
         flex-direction: row;
@@ -403,22 +407,15 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
-    .mail-kismi {
-        display: block;
-        padding: 0;
-        margin: 0;
-    }
-
-    .mail-kismi h3 {
-        font-size: 2.5rem;
+    .mail-kismi h4{
         text-align: center;
     }
-
-    .mail-kismi input {
-        width: 100vw;
+    .mail-kismi .input {
+        display: flex;
+        flex-direction: column;
     }
 
+    
     footer p {
         font-size: 1rem;
         text-align: center;
@@ -460,9 +457,6 @@ footer {
 
     }
 
-    button {
-        width: 100vw;
-    }
 
 
 
