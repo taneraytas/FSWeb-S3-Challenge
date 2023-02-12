@@ -50,7 +50,14 @@ table {
 * {
     box-sizing: border-box;
 }
-
+.icon {
+    font-size: 6vh;
+    color: white;
+    text-align: center;
+}
+.icon :nth-child(2) {
+    margin: 0 5% 0 5%;
+}
 html {
     max-width: 1920px;
     min-width: 428px;
@@ -69,6 +76,8 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 
 h1 {
     font-size: 7.5rem;
+    text-align: center;
+    color:white;
 }
 
 h2 {
@@ -82,6 +91,8 @@ h3 {
 p, a {
     font-size: 3rem;
 }
+
+
 
 /* header section */
 header {
@@ -107,16 +118,31 @@ header {
 
 /* gallery section */
 .gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
     height: 100vh;
     text-align: center;
     background-color: rgb(0, 4, 17);
 }
 
+.foods {
+    background-color: black;
+}
+.foods img {
+    width: 25%;
+    margin: 1%;
+}
+
+.foods h2{
+    color:white;
+}
+
 /* about us section */
 .about {
     width: 100%;
-    height: 75vh;
+    height: 90vh;
     text-align: center;
     background-image: url("../img/staff-cooks.jpg");
     background-size: cover;
@@ -131,16 +157,39 @@ header {
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 4, 17, .8);
+
 }
 
+.transparent {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: white;
+}
 .about h2 {
     width: 100%;
+    color: white;
+    font-size: 4rem;
 }
 
 .about-container .text {
     width: 50%;
+    color: white;    
 }
-
+.about-container .text p{
+    font-size: 2rem;
+    text-align: center;
+}
+.about-container .text h3{
+    font-size: 3rem;
+}
 /* contact us section */
 .contact {
     text-align: center;
@@ -149,6 +198,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(0, 4, 17);
+    color: white;
 }
 
 .contact-container {
@@ -188,6 +238,10 @@ header {
     width: 25%;
 }
 
+.contact a{
+    color: white;
+}
+
 /* footer section */
 footer {
     width: 100%;
@@ -199,7 +253,10 @@ footer {
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    .transparent nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     /* gallery section */
     .gallery {
@@ -251,3 +308,5 @@ footer {
         font-size: 2rem;
     }
 }
+
+
